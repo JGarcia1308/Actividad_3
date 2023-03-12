@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Clima</title>
+  <link rel="stylesheet" href="./css/styles.css">  
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">    
+</head>
+<body>
+  <div class="cards">
+    <article class="card">
+        <header>
+            <h2>Guatemala</h2>
+        </header>    
+        <img src="./img/guate.jpg" alt="Tikal">
+        <div class="content">
+            <p> Consulta el Clima </p>
+        </div>
+      <div class="container">
+        <form>
+          <label for="nFecha">Consulta por Fecha:</label>
+          <input type="date" name="nFecha" placeholder="dd/mm/yyyy">
+          <input type="button" value="Consultar" onclick="Consulta()">
+        </form>
+
+        <form>
+          <label for="nFecha">Consulta del Dia:</label>          
+          <input type="button" value="Consultar" onclick="ConsultaDia()">
+        </form>
+      </div>      
+    </article>
+            
+     <article class="card">
+        <header>
+            <h2 id="diaClima"></h2>
+        </header>    
+        <img src="" id="imgClima" alt="Clima del Dia">
+        <div class="content">
+            <p id="consultaClima">Temperatura: </p>
+        </div>
+        <footer id="pronostico">Pronostico: </footer>
+    </article>           
+    <script src="./js/renderer.js"></script>
+            
+    
+</body>
+</html>
